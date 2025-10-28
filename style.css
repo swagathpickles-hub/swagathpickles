@@ -1,0 +1,282 @@
+/*
+* Swagath Pickles - Custom Stylesheet
+*/
+
+/* ----------------
+:: 1. Global & Variables
+---------------- */
+
+:root {
+    --primary-color: #FF9933; /* Saffron/Orange */
+    --secondary-color: #EAAA00; /* Mustard Yellow */
+    --accent-color: #4F7942; /* Dark Green */
+    --bg-color: #FDFDFB; /* Very light beige/off-white */
+    --text-color: #333333;
+    --footer-bg: #343a40;
+    
+    --font-heading: 'Lora', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Offset for fixed navbar */
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* ----------------
+:: 2. Bootstrap Overrides & Utilities
+---------------- */
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e68a2e;
+    border-color: #e68a2e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* ----------------
+:: 3. Header & Navigation
+---------------- */
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--accent-color) !important;
+}
+
+.navbar .nav-link {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+/* ----------------
+:: 4. Hero & Page Headers
+---------------- */
+
+.hero-banner {
+    height: 90vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080.png?text=Traditional+Indian+Pickles') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.hero-content .tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.page-header {
+    padding: 10rem 0 6rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://via.placeholder.com/1920x400.png?text=Swagath+Pickles') no-repeat center center;
+    background-size: cover;
+}
+
+.page-header h1 {
+    color: white;
+    font-weight: 700;
+}
+
+/* ----------------
+:: 5. Products Page
+---------------- */
+
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    position: relative;
+    margin-bottom: 2.5rem !important;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.product-card .card-img-top {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.product-card .card-text {
+    font-size: 0.9rem;
+    flex-grow: 1; /* Makes card body equal height */
+}
+
+.product-card .card-footer {
+    background: white;
+    border-top: none;
+    padding: 1rem;
+}
+
+/* ----------------
+:: 6. Articles Page
+---------------- */
+
+.article-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* ----------------
+:: 7. Footer
+---------------- */
+
+.site-footer {
+    background-color: var(--footer-bg);
+}
+
+.site-footer h5 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.site-footer a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.site-footer ul li a:hover,
+.site-footer p a:hover {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.site-footer .fa-brands,
+.site-footer .fa-envelope,
+.site-footer .fa-phone {
+    transition: transform 0.3s ease;
+}
+
+.site-footer a:hover .fa-brands,
+.site-footer a:hover .fa-envelope,
+.site-footer a:hover .fa-phone {
+    transform: scale(1.2);
+}
+
+/* ----------------
+:: 8. Responsive Design
+---------------- */
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 70vh;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content .tagline {
+        font-size: 1.2rem;
+    }
+
+    .page-header {
+        padding: 8rem 0 4rem 0;
+    }
+
+    .site-footer .col-md-3,
+    .site-footer .col-md-5,
+    .site-footer .col-md-4 {
+        text-align: center;
+    }
+
+    .site-footer ul {
+        padding-left: 0;
+    }
+}
