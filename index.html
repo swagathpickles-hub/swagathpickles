@@ -14,7 +14,8 @@
     <meta property="og:url" content="https://your-github-username.github.io/swagath-pickles/">
     <meta property="og:type" content="website">
     
-    <link rel="icon" href="httpsaction_favicon_link" type="image/x-icon">
+    <!-- ✅ Use your logo as the favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,10 +29,14 @@
 </head>
 <body>
 
+    <!-- ✅ Header Section with Logo -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Swagath Pickles</a>
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Swagath Pickles Logo" width="50" height="50" class="me-2 rounded-circle">
+                    <span class="fw-bold">Swagath Pickles</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,11 +64,13 @@
     </header>
 
     <main>
-        <section class="hero-banner">
-            <div class="hero-content text-center text-white">
-                <h1 class="display-3">Swagath Pickles</h1>
-                <p class="tagline">Welcome taste into your home</p>
-                <a href="products.html" class="btn btn-primary btn-lg">Shop Now</a>
+        <!-- ✅ Homepage Banner Section -->
+        <section class="hero-banner position-relative" style="margin-top: 80px;">
+            <img src="Homepage.jpg" alt="Swagath Pickles Home Banner" class="img-fluid w-100" style="max-height: 600px; object-fit: cover;">
+            <div class="hero-content text-center text-white position-absolute top-50 start-50 translate-middle" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px;">
+                <h1 class="display-3 fw-bold">Swagath Pickles</h1>
+                <p class="tagline fs-4 mb-3">Welcome taste into your home</p>
+                <a href="products.html" class="btn btn-warning btn-lg text-dark fw-semibold">Shop Now</a>
             </div>
         </section>
 
@@ -100,7 +107,7 @@
         </section>
     </main>
 
-    <footer class="site-footer text-white py-5">
+    <footer class="site-footer text-white py-5 bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 mb-4 mb-md-0">
