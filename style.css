@@ -82,6 +82,12 @@ a:hover {
     color: var(--accent-color) !important;
 }
 
+/* Updated Logo Size */
+.navbar-logo {
+    max-height: 40px; /* You can change 40px to make it bigger or smaller */
+    width: auto;
+}
+
 .navbar .nav-link {
     font-weight: 400;
     text-transform: uppercase;
@@ -103,7 +109,12 @@ a:hover {
 .hero-banner {
     height: 90vh;
     min-height: 500px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x1080.png?text=Traditional+Indian+Pickles') no-repeat center center;
+    
+    /* * THIS IS THE UPDATED FIX 
+     * I changed 0.5 to 0.3 to make the black overlay lighter.
+     */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Homepage.jpg') no-repeat center center;
+    
     background-size: cover;
     display: flex;
     align-items: center;
