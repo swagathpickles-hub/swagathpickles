@@ -82,9 +82,9 @@ a:hover {
     color: var(--accent-color) !important;
 }
 
-/* Updated Logo Size */
+/* This is the important rule that makes your logo small */
 .navbar-logo {
-    max-height: 40px; /* You can change 40px to make it bigger or smaller */
+    max-height: 40px; 
     width: auto;
 }
 
@@ -106,15 +106,12 @@ a:hover {
 :: 4. Hero & Page Headers
 ---------------- */
 
+/* This is the rule for your banner */
 .hero-banner {
     height: 90vh;
     min-height: 500px;
-    
-    /* * THIS IS THE UPDATED FIX 
-     * I changed 0.5 to 0.3 to make the black overlay lighter.
-     */
+    /* I changed 0.5 to 0.3 to make the black overlay lighter */
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/Homepage.jpg') no-repeat center center;
-    
     background-size: cover;
     display: flex;
     align-items: center;
